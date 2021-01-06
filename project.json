@@ -1,0 +1,105 @@
+{
+  "name": "02 UiBank Overdrawn Accounts CICD",
+  "description": "This process collects overdrawn accounts from the UiBank Admin App.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UIBank.Lib": "[2.0.38137409]",
+    "UiPath.Credentials.Activities": "[1.1.6479.13204]",
+    "UiPath.Excel.Activities": "[2.8.5]",
+    "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.Testing.Activities": "[1.2.4]",
+    "UiPath.UIAutomation.Activities": "[20.4.1]",
+    "UiPath.WebAPI.Activities": "[1.4.4]",
+    "UiPathTeam.JsonToCsvConverter.Activities": "[1.1.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "19.10.4.0",
+  "projectVersion": "6.5.5",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandler.xaml",
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3f2f66c4-254a-4987-b1f5-715047881381",
+        "fileName": "TestCases\\NegativeAccountsProcess\\VerifyNegativeAccountsApi.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5e186ee4-8f79-4aae-940d-25a3740ac173",
+        "fileName": "TestCases\\Environment\\EndPointCheck.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f01afce8-55b8-4982-a176-febe2b94ccc8",
+        "fileName": "TestCases\\Login\\LoginOK.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5b4c9cfa-65af-4173-bb0b-991b3f045f55",
+        "fileName": "TestCases\\Environment\\APITokenCheck.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "49869fb1-a77e-480a-82db-296370b770f8",
+        "fileName": "TestCases\\Environment\\AssestsCheck.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "63b67b6c-c447-4e2b-a21d-38f6c8f4c40b",
+        "fileName": "TestCases\\NegativeAccountsProcess\\NegativeAccountsUICheck.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d1682cb2-e859-453b-bc1d-b02a482d8db9",
+        "fileName": "TestCases\\WebQuote\\Test WebQuote.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5c939b20-bcc5-4f82-89c3-9ba11cb401d9",
+        "fileName": "TestCases\\Login\\Login Test Mocked.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "675df3d0-302e-4216-a920-ee0a5be39a83",
+        "fileName": "UiBank\\TestCase.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "f6ab8b09-c3dc-4488-84a1-cf97ca410000",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
+}
