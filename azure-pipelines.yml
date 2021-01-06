@@ -25,3 +25,10 @@ steps:
     orchestratorConnection: 'UiPath Main Tenant'
     testProjectPath: '$(Build.SourcesDirectory)'
     folderName: 'ModernFolderDefault'
+
+- task: UiPathDeploy@2
+  inputs:
+    orchestratorConnection: 'UiPath Main Tenant'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'ModernFolderDefault'
+  condition: succeeded()
