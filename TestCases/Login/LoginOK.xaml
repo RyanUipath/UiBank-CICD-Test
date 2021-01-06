@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1183,1158</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1180,1298</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LoginOK_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -70,7 +70,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="754,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Test that we can login OK Demo" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="334,74" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Test that we can login OK Demo - Azure test" />
     <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="754,204" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -93,15 +93,9 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke UiBank_LogIn workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="UiBank\UiBank_LogIn.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_uiBankAppFolderPath">
-            <Literal x:TypeArguments="x:String">C:\Users\ryan.harris\Documents\UiPath\CICD\UiBank Admin</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="ss:SecureString" x:Key="in_password">
-            <mva:VisualBasicValue x:TypeArguments="ss:SecureString" ExpressionText="password" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_username">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="username" />
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_uiBankAppFolderPath">C:\Users\ryan.harris\Documents\UiPath\CICD\UiBank Admin</InArgument>
+          <InArgument x:TypeArguments="ss:SecureString" x:Key="in_password">[password]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_username">[username]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
