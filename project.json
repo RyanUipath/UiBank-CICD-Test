@@ -3,14 +3,13 @@
   "description": "This process collects overdrawn accounts from the UiBank Admin App.",
   "main": "Main.xaml",
   "dependencies": {
-    "UIBank.Lib": "[2.0.38137409]",
+    "UIBank.Lib": "[1.0.0]",
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.8.5]",
-    "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.System.Activities": "[20.10.1-beta.1162306]",
     "UiPath.Testing.Activities": "[1.2.4]",
-    "UiPath.UIAutomation.Activities": "[20.4.1]",
-    "UiPath.WebAPI.Activities": "[1.4.4]",
-    "UiPathTeam.JsonToCsvConverter.Activities": "[1.1.0]"
+    "UiPath.UIAutomation.Activities": "[20.10.3-preview]",
+    "UiPath.WebAPI.Activities": "[1.4.4]"
   },
   "webServices": [],
   "entitiesStores": [],
